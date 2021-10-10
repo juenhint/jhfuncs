@@ -1,6 +1,6 @@
 from setuptools import setup
 setup(name='jhfuncs',
-version='2.0',
+version='0.1',
 description='Tools for dataframe handling and analysis',
 url='#',
 author='Jukka Hintikka',
