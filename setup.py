@@ -1,10 +1,11 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+
 setup(name='jhfuncs',
-version='0.1',
+version='0.3',
 description='Tools for dataframe handling and analysis',
 url='#',
 author='Jukka Hintikka',
 author_email='juenhint@jyu.fi',
 license='MIT',
-packages=['jhfuncs'],
+packages=find_packages(),
 zip_safe=False)

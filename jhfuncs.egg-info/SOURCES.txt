@@ -1,0 +1,15 @@
+README.md
+setup.py
+jhfuncs/__init__.py
+jhfuncs/center_log_ratio.py
+jhfuncs/index_outliers.py
+jhfuncs/makeast.py
+jhfuncs/pearson_cor.py
+jhfuncs/quade_rancova.py
+jhfuncs/relative_frequency.py
+jhfuncs/spearman_cor.py
+jhfuncs.egg-info/PKG-INFO
+jhfuncs.egg-info/SOURCES.txt
+jhfuncs.egg-info/dependency_links.txt
+jhfuncs.egg-info/not-zip-safe
+jhfuncs.egg-info/top_level.txt
