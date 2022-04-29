@@ -1,10 +1,13 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.1
 Name: jhfuncs
-Version: 0.3
+Version: 0.4
 Summary: Tools for dataframe handling and analysis
 Home-page: #
 Author: Jukka Hintikka
 Author-email: juenhint@jyu.fi
 License: MIT
-Description: UNKNOWN
 Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

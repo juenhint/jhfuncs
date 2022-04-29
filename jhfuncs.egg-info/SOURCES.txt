@@ -1,6 +1,8 @@
+LICENSE
 README.md
 setup.py
 jhfuncs/__init__.py
+jhfuncs/add_ellipse.py
 jhfuncs/center_log_ratio.py
 jhfuncs/index_outliers.py
 jhfuncs/makeast.py

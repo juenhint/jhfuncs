@@ -8,15 +8,15 @@ def add_ellipse(ax, scores, group, comp1 = 0, comp2 = 1, palette=None, **kwargs)
     comp2: Component on the Y-axis
     palette: Palette for colors
     """
-    import scipy.stats as st
-    import numpy as np
-    from matplotlib import cm
-    from matplotlib.patches import Ellipse
-    
+	import scipy.stats as st
+	import numpy as np
+	from matplotlib import cm
+	from matplotlib.patches import Ellipse
+	
     alpha = 0.95
     if (kwargs.get("alpha")):
         alpha=kwargs["alpha"]
-    
+	
     if (palette == None):
         palette = cm.get_cmap("tab20").colors
     try:
