@@ -1,4 +1,4 @@
-def pearson_cor(a, b):
+def pearson_cor(a, b, nan="raise"):
     """Calculate Pearson correlation matrix for two dataframes with equal amount of obs
     a: First pandas dataframe
     b: Second pandas dataframe
@@ -12,7 +12,13 @@ def pearson_cor(a, b):
         new_c_row = []
         new_p_row = []
         for ci in range(0, b.shape[1]):
-            coef, p = _pearsonr(x = a.iloc[:,ri], y = b.iloc[:,ci])
+            x = a.iloc[:,ri]
+            y = b.iloc[:,ci]
+            if (nan == "omit"):
+                idd = x[~x.isna()].index.intersection(y[~y.isna()].index)
+                x = x[idd]
+                y = y[idd]
+            coef, p = _pearsonr(x = x, y = y)
             new_c_row.append(coef)
             new_p_row.append(p)
         coef_a.append(new_c_row)

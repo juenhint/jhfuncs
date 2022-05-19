@@ -13,5 +13,5 @@ author='Jukka Hintikka',
 author_email='juenhint@jyu.fi',
 license='MIT',
 packages=find_packages(),
-zip_safe=False
-install_requires=[pandas,numpy,matplotlib,pingouin])
+zip_safe=False,
+install_requires=["pandas","numpy","matplotlib","pingouin"])

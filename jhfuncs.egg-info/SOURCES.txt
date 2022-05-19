@@ -14,4 +14,5 @@ jhfuncs.egg-info/PKG-INFO
 jhfuncs.egg-info/SOURCES.txt
 jhfuncs.egg-info/dependency_links.txt
 jhfuncs.egg-info/not-zip-safe
+jhfuncs.egg-info/requires.txt
 jhfuncs.egg-info/top_level.txt
