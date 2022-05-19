@@ -11,7 +11,7 @@ _quade_rancova_ - Perform Quade's analysis of covariance (nonparametric ANCOVA)
 _relative_frequency_ - Transform a data matrix to relative frequencies    
 _spearman_cor_ - Calculate a Spearman correlation matrix from two datasets    
 
-Until published, install by running:
+Until published in pip, install on Windows by running:
 ```
 >pip install https://github.com/juenhint/jhfuncs/tarball/main
 ```
