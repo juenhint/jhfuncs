@@ -1,5 +1,5 @@
 # jhfuncs - A Python package of miscellaneous useful tools
-jhfuncs 0.42    
+jhfuncs 0.421    
 A collection of bioinformatics tools for python utilizing pandas dataframes and pyplot. Originally built for managing the microbiome and metabolomics datasets in JH's PhD research in University of Jyväskylä, Finland. This package will be appended and updated ad hoc.
 
 _add_ellipse_ - Add ellipses to a plt scatterplot, indicating 95 % CIs of selected groups    
