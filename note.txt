@@ -1,0 +1,7 @@
+Note to self: remember to build with:
+# python setup.py sdist bdist_wheel
+# python setup.py build
+
+if installing locally:
+# python setup.py install
+# pip install .
