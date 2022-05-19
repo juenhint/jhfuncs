@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='jhfuncs',
-version='0.4',
+version='0.41',
 description='Tools for dataframe handling and analysis',
 url='#',
 author='Jukka Hintikka',

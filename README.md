@@ -1,5 +1,5 @@
 # jhfuncs
-jhfuncs 0.4
+jhfuncs 0.41
 A collection of bioinformatics tools for python utilizing pandas dataframes
 Until published, install by running:
 # python setup.py sdist bdist_wheel
