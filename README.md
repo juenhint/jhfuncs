@@ -13,11 +13,11 @@ _spearman_cor_ - Calculate a Spearman correlation matrix from two datasets
 
 Until published, install by running:
 ```
->pip install https://github.com/juenhint/jhfuncs/zipball/main
+>pip install https://github.com/juenhint/jhfuncs/tarball/main
 ```
 or
 ```
-pip install https://github.com/juenhint/jhfuncs/tarball/main  
+pip install https://github.com/juenhint/jhfuncs/zipball/main  
 ```
 Author: Hintikka, Jukka. jukka.e.hintikka@jyu.fi
 
