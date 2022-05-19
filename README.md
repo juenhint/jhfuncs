@@ -2,6 +2,8 @@
 jhfuncs 1.0    
 A collection of bioinformatics tools for python utilizing pandas dataframes and pyplot. Originally built for managing the microbiome and metabolomics datasets in JH's PhD research in University of Jyväskylä, Finland. This package will be appended and updated ad hoc.
 
+A demonstration (not exhaustive) of the functions can be found [HERE](demo/testing.md)
+
 _plot_PCA_ - Perform Principal Component Analysis (PCA) and plot the results on a neat seaborn graph    
 _center_log_ratio_ - Perform center log ratio (clr) -transformation to a data matrix    
 _index_ouliers_ - Index datapoints outside 1.5*interquartile range    
