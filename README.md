@@ -16,7 +16,7 @@ _spearman_cor_ - Calculate a Spearman correlation matrix from two datasets
 
 Until published in pip, install on Windows by running:
 ```
->pip install https://github.com/juenhint/jhfuncs/tarball/main
+pip install https://github.com/juenhint/jhfuncs/tarball/main
 ```
 or
 ```
