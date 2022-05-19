@@ -1,4 +1,4 @@
-# jhfuncs - A Python package of miscellaneous useful tools
+# [jhfuncs](https://github.com/juenhint/jhfuncs) - A Python package of miscellaneous useful tools
 jhfuncs 1.0    
 A collection of bioinformatics tools for python utilizing pandas dataframes and pyplot. Originally built for managing the microbiome and metabolomics datasets in JH's PhD research in University of Jyväskylä, Finland. This package will be appended and updated ad hoc.
 
