@@ -1,8 +1,15 @@
 def index_outliers(data):
-    """
-    Return indexes of values that are not outliers. i.e. outside 1.5 * interquartile range
-    data: List or numpy array
-    returns List
+    """Return indexes of values that are not outliers. i.e. outside 1.5 * interquartile range (IQR)
+    
+    Parameters
+    ----------
+    data : :py:class:`numpy.ndarray` or list
+        A one dimensional array of the values
+    
+    Returns
+    -------
+    to_keep : list
+        A list of the indexes that are within 1.5 * IQR
     """
     from scipy.stats import iqr
     import numpy as np

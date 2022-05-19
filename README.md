@@ -22,6 +22,7 @@ Author: Hintikka, Jukka. jukka.e.hintikka@jyu.fi
 
 ver 0.42:
 - Improved documentation
+- Fixed bugs in correlation functions
 
 ver 0.41:
 - Added the function add_ellipse. 
