@@ -1,4 +1,4 @@
-# DEMONSTRATION OF THE FUNCTIONS IN THE PACKAGE JHFUNCS
+# Demonstration of the functions in the package [jhfuncs](https://github.com/juenhint/jhfuncs)
 
 ## Import of packages and example datasets
 We'll import the rat study example data[^1], this includes fecal metabolites, fecal microbes and phenotype data.
