@@ -1,5 +1,5 @@
 def index_outliers(data):
-    """Return indexes of values that are not outliers. i.e. outside 1.5 * interquartile range (IQR)
+    """Return indexes of values that are not outliers. i.e. outside 1.5 * interquartile range (IQR). So I suppose this function should really be called 'index non-outliers'. We'll make do with this.
     
     Parameters
     ----------
