@@ -1,0 +1,4 @@
+dataset,description,useful,ref
+genera,microbial genera from rat cecum,all,jh et al 2021
+metabolites,fecal metabolites from rat cecum,all,jh et al 2021
+metadata,phenodata for subjects,all,jh et al 2021
