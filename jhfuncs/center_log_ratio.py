@@ -25,6 +25,6 @@ def center_log_ratio(df, axis=0, pseudocount=0):
         cls = _np.log([c/gm for c in cs])
         return cls
     new_df = df + pseudocount
-    new_df = df.apply(handleRow, axis=axis, result_type="expand")
+    new_df = new_df.apply(handleRow, axis=axis, result_type="expand")
     new_df.columns = df.columns
     return new_df
