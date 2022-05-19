@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: jhfuncs
-Version: 0.44
+Version: 1.0
 Summary: Tools for dataframe handling and analysis
 Home-page: #
 Author: Jukka Hintikka
@@ -9,5 +9,5 @@ License: MIT
 Platform: UNKNOWN
 License-File: LICENSE
 
-Tools for handling and analysis of dataframes containing microbiome and metabolomics data. This packace utilizes mostly pandas, numpy and pyplot.
+Tools for handling and analysis of dataframes containing microbiome and metabolomics data. This packace utilizes mostly pandas, numpy and scipy.
 

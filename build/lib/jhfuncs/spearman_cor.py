@@ -29,10 +29,10 @@ def spearman_cor(a, b, nan="raise"):
     if (type(b) != _DataFrame):
         b = _DataFrame(b)
         
-    for ri in range(0, a_len):
+    for ri in range(0, a.shape[1]):
         new_c_row = []
         new_p_row = []
-        for ci in range(0, b_len):
+        for ci in range(0, b.shape[1]):
             aa = a.iloc[:,ri]
             bb = b.iloc[:,ci]
             coef, p = _spearmanr(a = aa, b = bb, nan_policy=nan)

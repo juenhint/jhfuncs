@@ -1,5 +1,5 @@
 # jhfuncs - A Python package of miscellaneous useful tools
-jhfuncs 0.44    
+jhfuncs 1.0    
 A collection of bioinformatics tools for python utilizing pandas dataframes and pyplot. Originally built for managing the microbiome and metabolomics datasets in JH's PhD research in University of Jyväskylä, Finland. This package will be appended and updated ad hoc.
 
 _plot_PCA_ - Perform Principal Component Analysis (PCA) and plot the results on a neat seaborn graph    
@@ -21,12 +21,3 @@ pip install https://github.com/juenhint/jhfuncs/zipball/main
 ```
 Author: Hintikka, Jukka. jukka.e.hintikka@jyu.fi
 
-ver 0.44
-- Added the function plot_PCA
-
-ver 0.43:
-- Added example datasets
-- Improved documentation
-- Fixed bugs in correlation functions
-- Added the function add_ellipse. 
-- Added the option of omitting NaN-values in pearson_cor
