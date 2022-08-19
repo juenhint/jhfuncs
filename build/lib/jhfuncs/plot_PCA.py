@@ -35,6 +35,7 @@ def plot_PCA(data, model=None, components=[0,1], ax=None, group=None, group2=Non
     import matplotlib.pyplot as _plt
     import matplotlib.cm as _cm
     import pandas as _pd
+    import numpy as _np
     from sklearn.decomposition import PCA as _PCA
     from jhfuncs import add_ellipse
     
@@ -44,24 +45,32 @@ def plot_PCA(data, model=None, components=[0,1], ax=None, group=None, group2=Non
     if (model is None):
         model = _PCA(random_state=0)
     scores = _pd.DataFrame(model.fit_transform(data), index=data.index)
-    if (ax is None):    
-        fig, axn = _plt.subplots(1, 1, figsize=[10,10])
-        ax = axn
-    if (group is None):
-        group = _pd.Series(len(scores)*["Group 1"], index=data.index)
-    if (palette is None):
-        palette = _cm.get_cmap("tab20").colors
-        
+    
     scatterparams = {"s": 200}
     scatterparams.update(scatter_kwargs)
-    sp = _sns.scatterplot(x=scores[0], y=scores[1], hue=group, style = group2, ax=ax, palette=palette, **scatterparams)
+    n_groups=1;
+    if (ax is None):    
+        fig, ax = _plt.subplots(1, 1, figsize=[10,10])
+        scatterparams["ax"] = ax
+    if (group is not None):
+        scatterparams["hue"] = group
+        n_groups = _np.unique(group).size
+    if (group2 is not None):
+        scatterparams["style"] = group2
+    if (palette is None):
+        palette = list(_cm.get_cmap("tab20").colors)[0:n_groups]
+    
+    scatterparams["palette"] = palette 
+    sp = _sns.scatterplot(x=scores[components[0]], y=scores[components[1]], **scatterparams)
     
     ellipseparams = {"alpha":0.95}
+    ellipseparams["palette"] = palette
     ellipseparams.update(ellipse_kwargs)
+
     if (plotparams.get("draw_ellipses")):
-        add_ellipse(ax, scores, group=group, comp1=components[0], comp2=components[1], palette=palette, **ellipseparams)
-    ax.set_xlabel(f"PC1 {round(model.explained_variance_ratio_[0]*100,1)} %")
-    ax.set_ylabel(f"PC2 {round(model.explained_variance_ratio_[1]*100,1)} %")
+        add_ellipse(ax, scores, group=group, comp1=components[0], comp2=components[1], **ellipseparams)
+    ax.set_xlabel(f"PC1 {round(model.explained_variance_ratio_[components[0]]*100,1)} %")
+    ax.set_ylabel(f"PC2 {round(model.explained_variance_ratio_[components[1]]*100,1)} %")
     ax.legend(markerscale=2)
     _plt.show()
     return scores, sp
