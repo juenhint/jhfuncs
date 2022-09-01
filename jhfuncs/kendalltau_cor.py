@@ -1,5 +1,5 @@
-def spearman_cor(a, b, nan="raise"):
-    """Calculate Spearman correlation matrix for two dataframes or series with equal amount of observations. The len(a) must match len(b). See scipy.stats.spearmanr for further info.
+def kendalltau_cor(a, b, nan="raise"):
+    """Calculate Kendall’s tau matrix for two dataframes or series with equal amount of observations. The len(a) must match len(b). See scipy.stats.kendalltau for further information.
     
     Parameters
     ----------
@@ -16,12 +16,12 @@ def spearman_cor(a, b, nan="raise"):
     Returns
     -------
     coef_df : :py:class:`pandas.DataFrame`
-        Matrix of correlation coefficients between each variable
+        Matrix of the tau statistics between each variable
     p : :py:class:`pandas.DataFrame`
-        Matrix of correlation p-values between each variable        
+        Matrix of p-values between each variable        
     """
     from pandas import DataFrame as _DataFrame
-    from scipy.stats import spearmanr as _spearmanr
+    from scipy.stats import kendalltau as _r
 
     coef_a = []
     p_a = []
@@ -36,7 +36,7 @@ def spearman_cor(a, b, nan="raise"):
         for ci in range(0, b.shape[1]):
             aa = a.iloc[:,ri]
             bb = b.iloc[:,ci]
-            coef, p = _spearmanr(a = aa, b = bb, nan_policy=nan)
+            coef, p = _r(a = aa, b = bb, nan_policy=nan)
             new_c_row.append(coef)
             new_p_row.append(p)
         coef_a.append(new_c_row)

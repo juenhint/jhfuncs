@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.0.1' 
+VERSION = '1.0.2' 
 DESCRIPTION = 'Tools for dataframe handling and analysis'
 LONG_DESCRIPTION = 'Tools for handling and analysis of dataframes containing microbiome and metabolomics data. This packace utilizes mostly pandas, numpy and scipy.'
 

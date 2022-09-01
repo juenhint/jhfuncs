@@ -5,6 +5,7 @@ jhfuncs/__init__.py
 jhfuncs/add_ellipse.py
 jhfuncs/center_log_ratio.py
 jhfuncs/index_outliers.py
+jhfuncs/kendalltau_cor.py
 jhfuncs/makeast.py
 jhfuncs/pearson_cor.py
 jhfuncs/plot_PCA.py

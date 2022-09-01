@@ -1,5 +1,5 @@
 def pearson_cor(a, b, nan="raise"):
-    """Calculate Pearson correlation matrix for two dataframes with equal amount of obs
+    """Calculate Pearson correlation matrix for two dataframes or series with equal amount of observations. See scipy.stats.pearsonr for further info.
     
     Parameters
     ----------

@@ -1,5 +1,5 @@
 # [jhfuncs](https://github.com/juenhint/jhfuncs) - A Python package of miscellaneous useful tools
-v 1.0.1
+v 1.0.2
 -
 A collection of bioinformatics tools for python utilizing pandas dataframes and pyplot. Originally built for managing the microbiome and metabolomics datasets in JH's PhD research in University of Jyväskylä, Finland. This package will be appended and updated ad hoc.
 
@@ -12,7 +12,8 @@ _makeast_ - Transform a matrix of p-values to single or double asterixes, as per
 _pearson_cor_ - Calculate a Pearson correlation matrix from two datasets    
 _quade_rancova_ - Perform Quade's analysis of covariance (nonparametric ANCOVA)    
 _relative_frequency_ - Transform a data matrix to relative frequencies    
-_spearman_cor_ - Calculate a Spearman correlation matrix from two datasets    
+_spearman_cor_ - Calculate a Spearman correlation matrix from two datasets
+_kendalltau_cor_ - Calculate a Kendall's tau matrix from two datasets     
 
 Until published in pip, install on Windows by running:
 ```

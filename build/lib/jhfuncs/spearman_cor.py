@@ -1,5 +1,5 @@
 def spearman_cor(a, b, nan="raise"):
-    """Calculate Spearman correlation matrix for two dataframes with equal amount of observations. The len(a) must match len(b).
+    """Calculate Spearman correlation matrix for two dataframes or series with equal amount of observations. The len(a) must match len(b). See scipy.stats.spearmanr for further info.
     
     Parameters
     ----------
@@ -8,9 +8,10 @@ def spearman_cor(a, b, nan="raise"):
     b :  :py:class:`pandas.DataFrame` or :py:class:`pandas.Series`
         Second set of measurements
     nan : string
-        How to handle nan-values in the data. One of the following:
+        How to handle nan-values in the data. Default is "raise". One of the following:
         "raise" : Raises an exception if nan-values are observed
         "omit" : Omits the datapoints with nan-values in each pair of variables
+        "propagate": Returns nan
     
     Returns
     -------
