@@ -69,8 +69,8 @@ def plot_PCA(data, model=None, components=[0,1], ax=None, group=None, group2=Non
 
     if (plotparams.get("draw_ellipses")):
         add_ellipse(ax, scores, group=group, comp1=components[0], comp2=components[1], **ellipseparams)
-    ax.set_xlabel(f"PC1 {round(model.explained_variance_ratio_[components[0]]*100,1)} %")
-    ax.set_ylabel(f"PC2 {round(model.explained_variance_ratio_[components[1]]*100,1)} %")
+    ax.set_xlabel(f"PC{components[0]+1} {round(model.explained_variance_ratio_[components[0]]*100,1)} %")
+    ax.set_ylabel(f"PC{components[1]+1} {round(model.explained_variance_ratio_[components[1]]*100,1)} %")
     ax.legend(markerscale=2)
     _plt.show()
     return scores, sp

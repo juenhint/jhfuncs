@@ -36,7 +36,7 @@ def kendalltau_cor(a, b, nan="raise"):
         for ci in range(0, b.shape[1]):
             aa = a.iloc[:,ri]
             bb = b.iloc[:,ci]
-            coef, p = _r(a = aa, b = bb, nan_policy=nan)
+            coef, p = _r(x = aa, y = bb, nan_policy=nan)
             new_c_row.append(coef)
             new_p_row.append(p)
         coef_a.append(new_c_row)
